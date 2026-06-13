@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ElectroSphere</title>
+
+<link rel="stylesheet" href="styles.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">⚡ ElectroSphere</div>
+
+<ul>
+<li><a href="#charge">Charge</a></li>
+<li><a href="#conductors">Conductors</a></li>
+<li><a href="#coulomb">Coulomb</a></li>
+<li><a href="#field">Electric Field</a></li>
+<li><a href="#dipoles">Dipoles</a></li>
+</ul>
+</nav>
+
+<header class="hero">
+<h1>ElectroSphere</h1>
+
+<p>
+Master Electric Charge, Coulomb's Law,
+Electric Fields, and Electric Dipoles.
+</p>
+
+<button onclick="scrollToContent()">
+Start Learning
+</button>
+</header>
+
+<section id="charge">
+<h2>5.1 Electric Charge</h2>
+
+<p>
+There are two types of charge:
+positive and negative.
+Like charges repel and unlike charges attract.
+</p>
+
+<p>
+Fundamental charge:
+1.602 × 10^-19 C
+</p>
+</section>
+
+<section id="conductors">
+<h2>5.2 Conductors & Insulators</h2>
+
+<p>
+Conductors allow charge to move freely.
+Insulators hold charge in place.
+</p>
+</section>
+
+<section id="coulomb">
+<h2>5.3 Coulomb's Law</h2>
+
+<p>
+F = k(q₁q₂)/r²
+</p>
+
+<input id="q1" placeholder="Charge 1">
+<input id="q2" placeholder="Charge 2">
+<input id="distance" placeholder="Distance">
+
+<button onclick="calculateForce()">
+Calculate Force
+</button>
+
+<h3 id="forceOutput"></h3>
+</section>
+
+<section id="field">
+<h2>5.4 Electric Field</h2>
+
+<p>
+E = F/q
+</p>
+
+<canvas id="fieldCanvas"></canvas>
+</section>
+
+<section id="dipoles">
+<h2>5.7 Electric Dipoles</h2>
+
+<p>
+p = qd
+</p>
+
+<input type="range"
+id="angleSlider"
+min="0"
+max="180">
+
+<h3 id="angleValue"></h3>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
